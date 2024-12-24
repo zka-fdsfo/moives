@@ -701,6 +701,7 @@ color: white;
   border-radius: 20px;
   margin-top: 40px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  margin-bottom: 200px;
 }
 .card-title {
   color: #fff;
@@ -760,6 +761,41 @@ html {
   backdrop-filter: blur(10px);
   color: white;
   height: 35em;
+}
+.icon-menu {
+  width: 91%;
+  height: 74px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 87px;
+  padding: 14px 25px;
+  display: flex
+;
+  gap: 57px;
+  position: fixed;
+  left: 505;
+  bottom: 27px;
+  z-index: 1;
+  margin-left: 25px;
+  backdrop-filter: blur(12px);
+  box-shadow: rgb(0 0 0) 0px 104px 60px -12px inset, rgb(0 0 0) 0px 18px 36px -18px inset;
+  justify-content: center;
+}
+.icon-item {
+  width: 75px;
+  height: 75px;
+  display: flex
+;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.icon-item i {
+  font-size: 34px;
+  color: #333;
 }
 
 }
