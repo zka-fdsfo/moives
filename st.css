@@ -639,3 +639,144 @@ color: white;
 .movie-card.fade-in .movie-overlay {
   opacity: 1;
 }
+@media only screen and (max-width: 900px){
+  html {
+      zoom: 0.5; /* Adjust the zoom level */
+    }
+  .u{
+      top: 0px;
+      
+  }
+}
+/* ...existing code... */
+
+@media (max-width: 600px) {
+  .watch-list-title {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .watch-item {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .watch-thumbnail {
+    width: 40px;
+    height: 40px;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .watch-title {
+    font-size: 10px;
+
+  }
+  .kp {
+    display: flex
+;
+    gap: 50px;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+}
+.card {
+  position: relative;
+  height: 27em;
+  width: 38em;
+  margin-top: 20px;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.con {
+  display: flex
+;
+  gap: 50px;
+  justify-content: space-around;
+  flex-direction: column;
+  backdrop-filter: blur(5px);
+  background-color: #00000040;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 40px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.card-title {
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 40px;
+}
+.play-button {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: rgba(8, 8, 8, 0.63);
+  display: flex
+;
+  justify-content: center;
+  align-items: center;
+  font-size: 33px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.container {
+  width: 50em;
+  height: 534px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  overflow-y: auto;
+  display: flex
+;
+  backdrop-filter: blur(5px);
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+
+}
+html {
+  zoom: 0.4; /* Adjust the zoom level */
+}
+.iut {
+  display: flex
+;
+  gap: 40px;
+  flex-direction: column;
+  align-items: center;
+}
+.watch-list-container {
+  width: 47em;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  color: white;
+  height: 35em;
+}
+
+}
+.fade-in {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  background-color: #333;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  background-color: #333;
+}
+
+/* ...existing code... */
+a{
+  text-decoration: none;
+  color: white;
+}
