@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vertical Icon Menu</title>
+    <title>Movies Hub</title>
     <!-- Font Awesome for icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link data-default-icon="https://static.cdninstagram.com/rsrc.php/v4/yI/r/VsNE-OHk_8a.png" rel="icon" sizes="192x192" href="https://static.cdninstagram.com/rsrc.php/v4/yI/r/VsNE-OHk_8a.png">
     <!-- External stylesheet -->
     <link rel="stylesheet" href="st.css">
 </head>
@@ -13,7 +14,7 @@
     <!-- Vertical Icon Menu -->
     <div class="icon-menu">
         <!-- Individual icon items -->
-        <div class="icon-item">
+        <div class="icon-item" id="home">
             <i class="fas fa-home"></i>
         </div>
         <div class="icon-item">
@@ -245,10 +246,13 @@
                                 Miles Morales catapults across the Multiverse, where he encounters a team of Spider-People charged with protecting its very existence.
                             </p>
                             <div class="actions">
-                                <button class="action-button">
-                                    <i class="fas fa-play"></i> Watch
-                                </button>
-                                <button class="action-button">
+                                <a href="#" class="watch-link">
+                                    <button class="action-button">
+                                        <i class="fas fa-play"></i> Watch
+                                    </button>
+                                </a>
+                                
+                                <button class="action-button" id="p">
                                     <i class="fas fa-download"></i> Download
                                 </button>
                                 <button class="action-button">
@@ -276,13 +280,13 @@
                       <div class="movie-wrapper">
                           <div class="wrapper-image">
                               <img src="https://i.pinimg.com/736x/ef/bf/c7/efbfc763a19da2a34958361010b5e26f.jpg" alt="Superhero Movie">
-                              <div class="wrapper-overlay">
+                              <div class="wrapper-overlay" id="qw">
                                   <div class="tag-wrapper">Action</div>
                                   <div class="icon-menuuu">•••</div>
                                   <div class="card-details">
                                       <h3>Superhero Returns (2023)</h3>
                                       <p>The ultimate battle begins when the hero faces an unstoppable villain...</p>
-                                      <button class="start-button">&#9654;</button>
+                                      <button class="start-button" id="qw">&#9654;</button>
                                   </div>
                               </div>
                           </div>
@@ -293,17 +297,18 @@
 
 
                   <div class="recommendation-card-container">
-                    <div class="movie-wrapper">
-                        <div class="wrapper-image">
+                   <div class="movie-wrapper">
+                        <div class="wrapper-image"  >
                             <img src="https://cinema.aptrixx.com/posters_original/tt16539454.jpg" alt="Superhero Movie">
-                            <div class="wrapper-overlay">
+                            <div class="wrapper-overlay" >
                                 <div class="tag-wrapper">Action</div>
                                 <div class="icon-menuuu">•••</div>
                                 <div class="card-details">
-                                    <h3>Superhero Returns (2023)</h3>
+                                    <h3>Pushpa 2</h3>
                                     <p>The ultimate battle begins when the hero faces an unstoppable villain...</p>
-                                    <button class="start-button">&#9654;</button>
-                                </div>
+                                    
+                                    <button class="start-button" id="pud" >&#9654;</button>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -314,10 +319,10 @@
 
 
                 <div class="recommendation-card-container">
-                  <div class="movie-wrapper">
+                  <div class="movie-wrapper" class="fa">
                       <div class="wrapper-image">
                           <img src="https://content1.jdmagicbox.com/comp/jd_social/news/2023dec07/image-1358403-fhyf64zqq4.jpg?fit=around|210:308&crop=210:308;*,*" alt="Superhero Movie">
-                          <div class="wrapper-overlay">
+                          <div class="wrapper-overlay" id="qd">
                               <div class="tag-wrapper">Action</div>
                               <div class="icon-menuuu">•••</div>
                               <div class="card-details">
@@ -457,49 +462,55 @@
   // Change content every 5 seconds
   setInterval(updateMovieCard, 5000);
 </script> -->
-<script>
-  const movieCard = document.querySelector('.movie-card');
+<!-- <script>
+
+const movieCard = document.querySelector('.movie-card');
 const movieImage = document.querySelector('.movie-image');
 const movieTitle = document.querySelector('.movie-title');
 const movieDescription = document.querySelector('.movie-description');
 const movieTags = document.querySelector('.tags');
+const watchButton = document.querySelector('.action-button .fa-play'); // Assuming the button has this class
 
 const movies = [
     {
         img: "https://media1.tenor.com/m/z-hZshMWLmcAAAAd/restart-start-again-y.gif",
         title: "12th Fail",
         description: "An inspiring tale of resilience and perseverance to overcome life's toughest challenges.",
-        tags: ["Drama", "Inspirational"]
+        tags: ["Drama", "Inspirational"],
+        watchLink: "ui.html" // Link to the movie's HTML file
     },
     {
         img: "https://etvbharatimages.akamaized.net/etvbharat/prod-images/17-11-2024/1200-675-22919810-1034-22919810-1731847957629.jpg",
         title: "Pushpa 2",
         description: "The story continues with Allu Arjun as Pushpa, navigating his rise amidst intense action and drama.",
-        tags: ["Action", "Drama"]
+        tags: ["Action", "Drama"],
+        watchLink: "ui.html" // Link to the movie's HTML file
     },
     {
         img: "https://i.pinimg.com/originals/04/23/cb/0423cb8662be494facb91d94e43c894f.gif",
         title: "Disney Aladdin",
         description: "A magical journey of love and adventure with Aladdin and his loyal genie.",
-        tags: ["Fantasy", "Adventure"]
+        tags: ["Fantasy", "Adventure"],
+        watchLink: "ui.html" // Link to the movie's HTML file
     },
     {
         img: "https://images.ottplay.com/images/big/stree-2-new-poster-1721216275.jpeg",
         title: "Stree 2",
         description: "The haunting yet comedic tale of a mysterious ghost in a small town continues.",
-        tags: ["Horror", "Comedy"]
+        tags: ["Horror", "Comedy"],
+        watchLink: "ui.html" // Link to the movie's HTML file
     },
     {
         img: "https://64.media.tumblr.com/a880a0b08cf9ab51c0fd6db6f56ad783/1b42d956fb7c6477-bc/s540x810/239d1a55c6f48a9f06b0136581970a217db11417.gifv",
         title: "Jawan",
         description: "A tale of love and revenge, packed with action and thrilling moments.",
-        tags: ["Action", "Thriller"]
+        tags: ["Action", "Thriller"],
+        watchLink: "ui.html" // Link to the movie's HTML file
     }
 ];
 
 let currentIndex = 0;
 
-// Start the sequence from "12th Fail"
 function updateMovieCard() {
     // Step 1: Apply fade-out effect
     movieCard.classList.add('fade-out');
@@ -510,20 +521,154 @@ function updateMovieCard() {
         currentIndex = (currentIndex + 1) % movies.length;
         const currentMovie = movies[currentIndex];
 
+        // Update the content
         movieImage.src = currentMovie.img;
         movieTitle.textContent = currentMovie.title;
         movieDescription.textContent = currentMovie.description;
         movieTags.innerHTML = currentMovie.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
 
+        // Set the "Watch" button link dynamically to the HTML file for the movie
+        if (watchButton) {
+            watchButton.setAttribute("href", currentMovie.watchLink); // Ensure the link is set dynamically
+        }
+
         // Step 3: Apply fade-in effect
         movieCard.classList.remove('fade-out');
         movieCard.classList.add('fade-in');
-    }, 1000); // Match the duration of the fade-out effect
+    }, 500); // Match the duration of the fade-out effect
 }
 
-// Change content every 10 seconds
+// Change content every 5 seconds
 setInterval(updateMovieCard, 5000);
 
-</script>
+// Call the update function initially to display the first movie card
+updateMovieCard();
 
+
+</script> -->
+<script>
+    const movieCard = document.querySelector('.movie-card');
+const movieImage = document.querySelector('.movie-image');
+const movieTitle = document.querySelector('.movie-title');
+const movieDescription = document.querySelector('.movie-description');
+const movieTags = document.querySelector('.tags');
+const watchLinkButton = document.querySelector('.watch-link'); // The anchor tag for the Watch button
+const p=document.querySelector('#p');
+
+const movies = [
+    {
+        img: "https://media1.tenor.com/m/z-hZshMWLmcAAAAd/restart-start-again-y.gif",
+        title: "12th Fail",
+        description: "An inspiring tale of resilience and perseverance to overcome life's toughest challenges.",
+        tags: ["Drama", "Inspirational"],
+        watchLink: "12thFail.html" // Link to the movie's HTML file
+    },
+    {
+        img: "https://etvbharatimages.akamaized.net/etvbharat/prod-images/17-11-2024/1200-675-22919810-1034-22919810-1731847957629.jpg",
+        title: "Pushpa 2",
+        description: "The story continues with Allu Arjun as Pushpa, navigating his rise amidst intense action and drama.",
+        tags: ["Action", "Drama"],
+        watchLink: "Pushpa.html" // Link to the movie's HTML file
+    },
+    {
+        img: "https://i.pinimg.com/originals/04/23/cb/0423cb8662be494facb91d94e43c894f.gif",
+        title: "Disney Aladdin",
+        description: "A magical journey of love and adventure with Aladdin and his loyal genie.",
+        tags: ["Fantasy", "Adventure"],
+        watchLink: "Aladdin.html" // Link to the movie's HTML file
+    },
+    {
+        img: "https://images.ottplay.com/images/big/stree-2-new-poster-1721216275.jpeg",
+        title: "Stree 2",
+        description: "The haunting yet comedic tale of a mysterious ghost in a small town continues.",
+        tags: ["Horror", "Comedy"],
+        watchLink: "Stree2.html" // Link to the movie's HTML file
+    },
+    {
+        img: "https://64.media.tumblr.com/a880a0b08cf9ab51c0fd6db6f56ad783/1b42d956fb7c6477-bc/s540x810/239d1a55c6f48a9f06b0136581970a217db11417.gifv",
+        title: "Jawan",
+        description: "A tale of love and revenge, packed with action and thrilling moments.",
+        tags: ["Action", "Thriller"],
+        watchLink: "jawan.html" // Link to the movie's HTML file
+    }
+];
+
+let currentIndex = 0;
+
+function updateMovieCard() {
+    // Apply fade-out effect
+    movieCard.classList.add('fade-out');
+    movieCard.classList.remove('fade-in');
+
+    setTimeout(() => {
+        // Update content after fade-out completes
+        currentIndex = (currentIndex + 1) % movies.length;
+        const currentMovie = movies[currentIndex];
+
+        // Update movie information
+        movieImage.src = currentMovie.img;
+        movieTitle.textContent = currentMovie.title;
+        movieDescription.textContent = currentMovie.description;
+        movieTags.innerHTML = currentMovie.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
+
+        // Update the "Watch" button link dynamically
+        if (watchLinkButton) {
+            watchLinkButton.setAttribute("href", currentMovie.watchLink); // Set the correct link for the current movie
+        }
+
+        // Apply fade-in effect
+        movieCard.classList.remove('fade-out');
+        movieCard.classList.add('fade-in');
+    }, 800); // Match the duration of the fade-out effect
+}
+
+// Change movie card every 5 seconds
+setInterval(updateMovieCard, 5000);
+
+// Call the update function initially to display the first movie card
+updateMovieCard();
+// Fix the selector for the action button
+// Use '.' for a class selector
+
+// Add event listener
+if (p) { // Check if the button exists
+    p.addEventListener('click', () => {
+        alert('Sorry this film is not available to Download');
+    });
+} else {
+    console.error('Action button not found in the document.');
+};
+
+
+document.addEventListener('DOMContentLoaded', ()=>{
+    const qd=document.querySelector('#qd');
+    qd.addEventListener('click',()=>{
+        alert('hi i am zaid');
+        location.href='pushpa.html';
+    })
+})
+
+
+const home = document.querySelector('#home');
+
+home.addEventListener('click',()=>{
+        alert('zaid');
+        location.href='https://www.linkedin.com/feed/';
+       })
+
+</script>
+<script>
+     document.addEventListener('DOMContentLoaded', () => {
+        // Select the #qw element
+        const qw = document.querySelector('#qw');
+
+        // Add a click event listener
+        qw.addEventListener('click', () => {
+            location.href = 'pushpa.html';
+        });
+
+        // Apply background color styling
+       
+    });
+    </script>
 </html>
