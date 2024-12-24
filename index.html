@@ -11,6 +11,15 @@
     <link rel="stylesheet" href="st.css">
 </head>
 <body>
+    <div class="preloader">
+        <div class="logo-container">
+          <div class="logo"><img src="re.png" alt=""></div>
+          <p>Fake Movies Hub</p>
+        </div>
+        <div class="loading-bar">
+          <div class="progress"></div>
+        </div>
+      </div>
     <!-- Vertical Icon Menu -->
     <div class="icon-menu">
         <!-- Individual icon items -->
@@ -670,5 +679,14 @@ home.addEventListener('click',()=>{
         // Apply background color styling
        
     });
+    // Wait until the page is fully loaded
+window.onload = function () {
+  const preloader = document.querySelector('.preloader'); // Select the preloader
+  setTimeout(() => {
+    preloader.style.opacity = '0'; // Fade out the preloader
+    preloader.style.visibility = 'hidden'; // Hide it after fading out
+  }, 3000); // Preloader will fade out after 3 seconds
+};
+
     </script>
 </html>
