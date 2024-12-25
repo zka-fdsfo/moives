@@ -1131,7 +1131,39 @@ html {
   gap: 15px;
   justify-content: center;
 }
-
+.action-button {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid;
+  font-size: 23px;
+  border-radius: 26px;
+  display: flex
+;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.movie-title {
+  margin: 10px 0;
+  font-size: 37px;
+  font-weight: bold;
+  color: white;
+}
+.movie-description {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.tag {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 20px;
+}
 }
 .fade-in {
   opacity: 1;
