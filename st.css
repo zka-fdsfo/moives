@@ -833,9 +833,9 @@ body {
 }
 .movie-image {
   width: 100%;
-  height: 120%;
+  height: 84%;
   display: block;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .lpui {
   display: flex
@@ -854,10 +854,11 @@ body {
 .movie-card {
   position: relative;
   width: 100%;
-  height:540px;
+  height:650px;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0 7 10));
 }
 .card-title {
   color: #fff;
@@ -1163,12 +1164,27 @@ html {
   padding: 10px 20px;
   border-radius: 20px;
   font-size: 20px;
+  
+}
+
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  background-color: #00070a;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  background-color: #00070a;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 }
 .fade-in {
   opacity: 1;
   transition: opacity 1s ease-in-out;
-  background-color: #333;
+  background-color: #00070a;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
