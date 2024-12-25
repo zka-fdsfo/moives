@@ -846,7 +846,7 @@ body {
 }
 .recommendation-container {
   padding: 20px;
-  box-shadow:0;
+  box-shadow:rgba(50, 50, 93, 0) 0px 30px 60px -12px inset, rgb(0 0 0 / 0%) 0px 18px 36px -18px inset;
   border-radius: 30px;
   backdrop-filter: blur(0);
   background: rgb(0 7 10 / 0%);
@@ -1021,110 +1021,45 @@ html {
   font-size: 34px;
   color: #333;
 }
-
-
-   
-.navbar {
-  display: flex
-;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 24px 20px;
-  background: #898887;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  width: 12em;
-  height: 100%;
-  gap: 36px;
-  border-top-right-radius: 27px;
-  border-bottom-right-radius: 27px;
+.search{
   display: none;
 }
 
-.search {
-  display: flex
-  ;
-      align-items: center;
-      color: white;
-      background: rgb(0 0 0 / 54%);
-      border-radius: 20px;
-      padding: 5px 15px;
-      gap: 10px;
-      flex: 1;
-      max-width: 300px;
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-  }
-
-
-.search i {
+.profile i {
+  display: none;
   color: #ffffff;
-}
 
-.search input {
-  border: none;
-  outline: none;
-  background: transparent;
-  width: 100%;
-  font-size: 14px;
-  color: #ffffff;
 }
-
-.menu {
-  display: flex
-;
-  gap: 20px;
-  /* flex-wrap: nowrap; */
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-  margin: 25px;
-}
-
 .menu-item {
   text-decoration: none;
   color: #ffffff;
-  padding: 5px 10px;
-  border-radius: 20px;
-  font-size: 13px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 20px;
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-.menu-item:hover, .menu-item.active {
-  background: rgba(255, 255, 255, 0.8);
-  color: #333;
-}
-
-.profile {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.profile-info {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
 .profile-info img {
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
 }
 
 .profile-info span {
   font-size: 14px;
   color: #ffffff;
-}
-
-.profile i {
-  color: #ffffff;
-}
-.navbi{
-  margin: 10px;
-  font-size: 20px;
   display: none;
-  
+}
+.navbar {
+  display: flex
+;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 20px;
+  flex-direction: row-reverse;
+  margin: 20px;
+  margin-top: 30px;
+  margin-bottom: -10px;
 }
 .actions {
   display: flex
