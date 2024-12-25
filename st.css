@@ -1001,6 +1001,7 @@ html {
   height: 100%;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0 7 10)84%);
   padding: 20px;
+  padding-left: 50px;
   box-sizing: border-box;
   display: flex
 ;
