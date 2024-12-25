@@ -715,7 +715,7 @@ color: white;
 }
 /* ...existing code... */
 
-@media (max-width: 600px) {
+@media (max-width: 600px ) {
   .watch-list-title {
     font-size: 30px;
     margin-bottom: 40px;
@@ -815,7 +815,7 @@ body {
   overflow-x: auto;
   overflow-y: hidden;
   padding: 10px;
-  gap: 20px;
+  gap: 73px;
 }
 .wrapper-overlay {
   position: absolute;
@@ -940,7 +940,7 @@ html {
 }
 .movie-wrapper {
   width: 19em;
-  border-radius: 15px;
+  border-radius: 0px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   position: relative;
