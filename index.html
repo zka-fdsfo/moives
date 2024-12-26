@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="st.css">
 </head>
 <body>
+    
     <div class="preloader">
         <div class="logo-container">
           <div class="logo"><img src="re.png" alt=""></div>
@@ -21,7 +22,9 @@
         </div>
       </div>
     <!-- Vertical Icon Menu -->
+    
     <div class="icon-menu">
+        
         <!-- Individual icon items -->
         <div class="icon-item" id="home">
             <i class="fas fa-home"></i>
@@ -43,7 +46,9 @@
     <!-- Main container -->
     <div class="con">
         <!-- Navbar section -->
+        <div class="navbi"><i class="fa-solid fa-bars"></i></div>
         <div class="navbar">
+            <div class="navb"><i class="fa-solid fa-bars"></i></div>
             <!-- Search bar -->
             <div class="search">
                 <i class="fas fa-search"></i>
@@ -411,6 +416,71 @@
 
                 </div>
             </div>
+            <div class="movies_section_1">
+                <h2 class="section_title_123">Top Bollywood Horror Movies</h2>
+                <div class="movies_container_45">
+                  <div class="movie_card_789">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFCdE40e5KBYYBuzX_KAtMflZbQEREFl4_8-Oo5h0K7YtudkbwsRsQRObYYLtWDhlH36g&usqp=CAU" alt="Street Dancer 2">
+                    <div class="movie_info_90">
+                      <p>Street Dancer 2</p>
+                    </div>
+                  </div>
+                  <div class="movie_card_789">
+                    <img src="https://www.deccanchronicle.com/h-upload/2024/06/06/1500x900_1095338-whatsappimage2024-06-06at64624pm.webp" alt="Munja">
+                    <div class="movie_info_90">
+                      <p>Munja</p>
+                    </div>
+                  </div>
+                  <div class="movie_card_789">
+                    <img src="https://www.hindustantimes.com/ht-img/img/2024/12/25/550x309/Bhool_Bhulaiyaa_3_1730724219478_1735123853328.jpg" alt="Bhool Bhulaiyaa 3">
+                    <div class="movie_info_90">
+                      <p>Bhool Bhulaiyaa 3</p>
+                    </div>
+                  </div>
+                  <div class="movie_card_789">
+                    <img src="https://www.jagranimages.com/images/newimg/25112022/25_11_2022-chhori_2_23227902.webp" alt="Chhorii 2">
+                    <div class="movie_info_90">
+                      <p>Chhorii 2</p>
+                    </div>
+                  </div>
+                  <div class="movie_card_789">
+                    <img src="https://im.rediff.com/movies/2016/sep/19raaz1.jpg" alt="Raaz Reboot 2">
+                    <div class="movie_info_90">
+                      <p>Raaz Reboot 2</p>
+                    </div>
+                  </div>
+                  <div class="movie_card_789">
+                    <img src="https://i.ytimg.com/vi/JsvJOpwa3-E/maxresdefault.jpg" alt="Pari 2">
+                    <div class="movie_info_90">
+                      <p>Pari 2</p>
+                    </div>
+                  </div>
+                  <div class="movie_card_789">
+                    <img src="https://cafedissensuseveryday.com/wp-content/uploads/2020/08/bulbbul-1593787809878.jpg" alt="Bulbbul Returns">
+                    <div class="movie_info_90">
+                      <p>Bulbbul Returns</p>
+                    </div>
+                  </div>
+                  <div class="movie_card_789">
+                    <img src="https://i.ytimg.com/vi/BpC-Owk5MNY/maxresdefault.jpg" alt="1921 Legacy">
+                    <div class="movie_info_90">
+                      <p>Bhoothnath Returns</p>
+                    </div>
+                  </div>
+                  <div class="movie_card_789">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtfAo9BOCEVgetDKXS8_pgdiH0nG-itlpDRQ&s" alt="The Haunted Ship 2">
+                    <div class="movie_info_90">
+                      <p>NUN 2</p>
+                    </div>
+                  </div>
+                  <div class="movie_card_789">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00312739-xlcavakdcd-landscape.jpg" alt="Haunted Mansion">
+                    <div class="movie_info_90">
+                      <p>Bhediya</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
     </div>
 </body>
@@ -677,8 +747,25 @@ home.addEventListener('click',()=>{
         });
 
         // Apply background color styling
+        const navb=document.querySelector('.navb');
+    const navbi=document.querySelector('.navbi');
+    const navbar=document.querySelector('.navbar');
+    navb.addEventListener('click', () => {
+  
+    // Otherwise, show it
+    navbar.style.display = 'none';
+  
+}); 
+navbi.addEventListener('click', () => {
+  
+  // Otherwise, show it
+  navbar.style.display = 'block';
+
+})
        
     });
+    
+   ;
     // Wait until the page is fully loaded
 window.onload = function () {
   const preloader = document.querySelector('.preloader'); // Select the preloader
@@ -686,7 +773,16 @@ window.onload = function () {
     preloader.style.opacity = '0'; // Fade out the preloader
     preloader.style.visibility = 'hidden'; // Hide it after fading out
   }, 3000); // Preloader will fade out after 3 seconds
+  
 };
+
+
+// Select the image element by its ID
+const image = document.getElementById('spiderman-image');
+
+// Add a box shadow using JavaScript
+image.style.boxShadow = '10px 10px 20px rgba(0, 0, 0, 0.5)';
+
 
     </script>
 </html>
